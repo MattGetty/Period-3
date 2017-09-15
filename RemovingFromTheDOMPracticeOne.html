@@ -1,0 +1,46 @@
+<html>
+  <head>
+  </head>
+<body>
+  <script>
+  function removeOne(){
+  if(purgeIsReal.value == "Brandon"){
+      //select the duck in the list item and save it.
+      var stupidKid = document.getElementsByTagName('li')[0];
+      //select the containing element. The parentNode is the <ul>
+      var hana = stupidKid.parentNode;
+      //Remove the element
+      hana.removeChild(stupidKid);
+    }
+  else if(purgeIsReal.value == "Bryson"){
+    var stupidKid = document.getElementsByTagName('li')[1];
+      //select the containing element. The parentNode is the <ul>
+      var hana = stupidKid.parentNode;
+      //Remove the element
+      hana.removeChild(stupidKid);
+  }
+  else if(purgeIsReal.value == "Justin"){
+    var stupidKid = document.getElementsByTagName('li')[2];
+      //select the containing element. The parentNode is the <ul>
+      var hana = stupidKid.parentNode;
+      //Remove the element
+      hana.removeChild(stupidKid);
+  }
+  else{
+    window.alert("You spelt something wrong. Caps count");
+  }
+  }
+    
+  </script>
+  <input type = 'text' id = "purgeIsReal">
+<button onclick="removeOne()">
+Purge one child
+</button>
+<ul>
+  <li> Brandon</li>
+  <li> Bryson</li>
+  <li> Justin</li>
+</ul>
+
+</body>
+</html>
