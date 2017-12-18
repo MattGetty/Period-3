@@ -1,0 +1,77 @@
+ <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="foodProjectCSS.css">
+    <script src="foodProjectJS.js"></script>
+  </head>
+  <body>
+    <div class="header">
+			<b id="welcome">Welcome to Space Jams</b>
+			<p id="one">Support Us</p>
+			<p id="two">About Space Jams</p>
+		<!--	<img src="SpaceJamLogo.jpg" id="logo">-->
+	</div>
+<!--	<div id="logoArea">
+	  <div id="Logo">
+	  <img src="NewLogo.jpg" height="300px">
+	  </div>
+	</div>-->
+	<div class="container">
+	  <div id="strawberryJam">
+	    <b>Alien Blood Jam</b>
+	    <br>
+	     <input type="number" id="numberOfStrawberryJamsOrdered">
+	        <button onclick="orderStrawberryJam()">Order</button>
+	        <br>
+	       <b>$9.99</b>
+	  </div>
+	  <div id="blueBerryJam">
+	  <b>Blueberry Jam</b>
+	  <br>
+	  <input type="number" id="numberOfBlueberryJamsOrdered">
+	    <button onclick ="orderBlueberryJam()">Order</button>
+	    <br>
+	    <b>$9.99</b>
+	    </div>
+	  <div id="TropicalJam">
+	    <b>Tropical Jam</b>
+	    <br>
+	   <input type="number" id="numberOfTropicalJamsOrdered">
+	   <button onclick = "orderTropicalJam()">Order</button>
+	   <br>
+	   <b>$14.99</b>
+	  </div>
+	  <div id="SecretStuff">
+	    <b>Jordan's Secret Stuff</b>
+	    <br>
+	    <input type="number" id="numberOfSecretStuffsOrdered">
+	    <button onclick ="orderSecretStuff()">Order</button>
+	    <br>
+	    <b>$29.99</b>
+	  </div>
+	  <div id="dragonFruitJam">
+	    <b>Dragon Fruit Jam from a Space Dragon</b>
+	    <br>
+	    <input type="number" id="numberOfDragonFruitJamsOrdered">
+	    <button onclick="orderDragonFruitJam()">Order</button>
+	    <br>
+	    <b>$14.99</b>
+	  </div>
+	  <div id="marmalade">
+	    <b>Marmalade from the Sun</b>
+	    <br>
+	    <input type="number" id="numberOfMarmaladesOrdered">
+	    <button onclick="orderMarmaladeFromTheSun()">Order</button>
+	    <br>
+	    <b>$9.99</b>
+	  </div>
+	  <div id="whereThePricingAreaisGonnaBe">
+	    <b>Your Cart:</b>
+	    <li id="itemOne"> </li>
+	<p id="subtotal"> Sub Total: </p>
+	<p id="total"> Total With Tax:   </p>
+	<br>
+	<button onclick="finalizeOrder()">Finalize Order</button>
+	</div>
+	</div>
+  </body>
+</html>
