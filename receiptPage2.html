@@ -1,0 +1,67 @@
+<html>
+<head>
+  <style>
+    h1{
+  text-align:center;
+}
+#tyBB{
+  text-align: center;
+}
+#itemNames{
+  width: 50%;
+  text-align:center;
+  margin:auto;
+  height: 350px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: black;
+}
+	#subtotal{
+		color: black;
+		font-size: 20px;
+}
+	#total{
+		color: black;
+		font-size: 20px;
+}
+#closeEmOut{
+  width:100%;
+  text-align: center;
+  height: 200px;
+  border-style: solid;
+  border-radius: 1px;
+  border-color: black;
+  float: left;
+}
+  </style>
+</head>
+<body>
+  <h1> Thank You For Choosing Space Jams</h1>
+  <h1> THIS IS UR RECEIPT</h1>
+<div id="itemNames">
+  <h1> Items Ordered & Price: </h1>
+  <li id="itemOne"> </li>
+  
+<p id="subtotal"> SubTotal: </p>
+<p id="total"> Total: </p>
+</div>
+<br>
+<div id="closeEmOut">
+  <a href= "foodProjectHTML.html"> Order More Food Here</a>
+  <h1 id="tyBB">ThAnK U fOr Ur MoNiE$ :^)</h1>
+</div>
+<script>
+var a = localStorage.getItem("cartItems");
+var b = JSON.parse(a);
+document.getElementById('itemOne').innerHTML = b;
+var c = localStorage.getItem("shouldBeTheTotal");
+var d = JSON.parse(c);
+var total = 0;
+	for (var i = 0; i < b.length; i++) {
+	total += d[i];
+	document.getElementById('subtotal').innerHTML= "SubTotal:  $" + total.toFixed(2);
+	document.getElementById('total').innerHTML= "Total: $" + (total * 1.04712).toFixed(2);
+}
+ </script>
+</body>
+</html>
